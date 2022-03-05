@@ -1,0 +1,18 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+#header {
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100px;
+    background-color: cornflowerblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#header p {
+    vertical-align: middle;
+}
