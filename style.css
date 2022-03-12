@@ -1,12 +1,13 @@
 * {
     margin:0px;
     padding:0px;
+    box-sizing: border-box;
 }
 #header {
     left: 0px;
     top: 0px;
     width: 100vw;
-    height: 100px;
+    height: 200px;
     background-color: cornflowerblue;
     text-align: center;
     display: flex;
@@ -15,4 +16,72 @@
 }
 #header p {
     vertical-align: middle;
+}
+a.button {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+}
+a.button:hover { background: rgb(53, 167, 110); }
+a.button:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+h1 {
+    padding-bottom: 4vh;
+    color: cyan;
+    font-style: italic;
+}
+input[type="text"] {
+    font-family: inherit;
+    height: calc(2.25rem + 2px);
+    padding: .8em 1em calc(.8em + 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #93e0cd;
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+    -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+}
+li:hover { background: #93e0cd; }
+a.delbut {
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background: rgb(64, 111, 199);
+    box-shadow: 0 -3px rgb(53, 123, 167) inset;
+    transition: 0.2s;
+    float: right;
+}
+a.delbut:hover { background: rgb(53, 102, 167); }
+a.delbut:active {
+    background: rgb(33, 79, 147);
+    box-shadow: 0 3px rgb(33, 73, 147) inset;
 }
