@@ -68,7 +68,13 @@ li {
     letter-spacing: 2px;
     transition: 0.3s all linear;
 }
+ul li:checked {
+    text-decoration: line-through;
+}
 li:hover { background: #93e0cd; }
+li input[type="checkbox"]:checked + span{
+    text-decoration: line-through;
+}
 a.delbut {
     font-weight: 300;
     color: white;
