@@ -3,7 +3,9 @@
     padding:0px;
     box-sizing: border-box;
 }
+
 #header {
+    position: sticky;
     left: 0px;
     top: 0px;
     width: 100vw;
@@ -14,9 +16,28 @@
     flex-direction: column;
     justify-content: center;
 }
+
 #header p {
     vertical-align: middle;
 }
+
+#niz {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100vw;
+    height: 60px;
+    background-color: cornflowerblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#niz p {
+    vertical-align: middle;
+}
+
 a.button {
     font-weight: 700;
     color: white;
@@ -27,16 +48,19 @@ a.button {
     box-shadow: 0 -3px rgb(53,167,110) inset;
     transition: 0.2s;
 }
+
 a.button:hover { background: rgb(53, 167, 110); }
 a.button:active {
     background: rgb(33,147,90);
     box-shadow: 0 3px rgb(33,147,90) inset;
 }
+
 h1 {
     padding-bottom: 4vh;
     color: cyan;
     font-style: italic;
 }
+
 input[type="text"] {
     font-family: inherit;
     height: calc(2.25rem + 2px);
@@ -51,10 +75,12 @@ input[type="text"] {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 ul {
     list-style: none;
     padding: 0;
 }
+
 li {
     padding: 7px 20px;
     margin-bottom: 10px;
@@ -68,13 +94,16 @@ li {
     letter-spacing: 2px;
     transition: 0.3s all linear;
 }
+
 ul li:checked {
     text-decoration: line-through;
 }
+
 li:hover { background: #93e0cd; }
 li input[type="checkbox"]:checked + span{
     text-decoration: line-through;
 }
+
 a.delbut {
     font-weight: 300;
     color: white;
@@ -86,6 +115,7 @@ a.delbut {
     transition: 0.2s;
     float: right;
 }
+
 a.delbut:hover { background: rgb(53, 102, 167); }
 a.delbut:active {
     background: rgb(33, 79, 147);
